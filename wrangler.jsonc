@@ -10,17 +10,20 @@
 	"compatibility_flags": ["nodejs_compat"],
 	"migrations": [
 		{
-			"new_sqlite_classes": ["MyMCP"],
-			"tag": "v1"
+			"new_sqlite_classes": ["FigmaMcp"],
+			"tag": "v2"
 		}
 	],
 	"durable_objects": {
 		"bindings": [
 			{
-				"class_name": "MyMCP",
+				"class_name": "FigmaMcp",
 				"name": "MCP_OBJECT"
 			}
 		]
+	},
+	"vars": {
+		"FIGMA_API_KEY": ""
 	},
 	"observability": {
 		"enabled": true
